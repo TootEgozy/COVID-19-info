@@ -1,0 +1,178 @@
+/******************************/
+/*          General          */
+/*****************************/
+
+:root {
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+body {
+  background-image: url(images/background-8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+
+/*******************************/
+/*          Headings          */
+/*****************************/
+
+body .page-heading {
+  color: rgb(96, 131, 170);
+  size: 7rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(51, 65, 126);
+}
+
+/*******************************/
+/*          Buttons           */
+/*****************************/
+
+/* Showed buttons */
+
+button {
+  width: 7rem;
+  height: 1.8rem;
+  border: 1px solid thistle;
+  border-radius: 7px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  margin: 0.4rem;
+  box-shadow: 1px 1px 10px rgb(148, 148, 158);
+}
+
+button:active,
+button:focus {
+  width: 7rem;
+  height: 1.8rem;
+  border: 1px solid thistle;
+  border-radius: 7px;
+  background-color: thistle;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  margin: 0.4rem;
+  box-shadow: 1px 1px 10px rgb(148, 148, 158);
+}
+
+.region-btn-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.stats-btn-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.stats {
+  width: 5.5rem;
+  height: 1.8rem;
+  border: 2px solid rgb(103, 255, 103);
+  border-radius: 0px;
+  background-color: rgba(103, 255, 103, 0.1);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  margin: 0.4rem;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.stats:active,
+.stats:focus {
+  width: 5.5rem;
+  height: 1.8rem;
+  border: 2px solid rgb(103, 255, 103);
+  border-radius: 0px;
+  background-color: rgb(103, 255, 103);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  margin: 0.4rem;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.stats-btn-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 5px;
+}
+
+.countryButton {
+  background-color: rgb(149, 183, 221);
+  border-radius: 0px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  border: 1px solid rgb(151, 185, 223);
+  box-shadow: none;
+}
+
+.countryButton:active,
+.countryButton:focus {
+  background-color: rgb(61, 87, 117);
+  color: white;
+  border-radius: 0px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  border: 1px solid rgb(27, 44, 65);
+  box-shadow: none;
+}
+
+/*******************************/
+/*          Graph             */
+/*****************************/
+
+.graph-wrapper {
+  background-color: rgba(250, 250, 250, 0.5);
+  position: relative;
+  top: 4vh;
+  transform: translateX(15%);
+  padding: 3rem;
+  width: 75vw;
+  height: 70vh;
+  margin: 1rem;
+}
+
+/*******************************/
+/*          Animation         */
+/*****************************/
+
+.animation {
+  position: absolute;
+  z-index: 2;
+  left: 20%;
+}
